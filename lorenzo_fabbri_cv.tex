@@ -1,0 +1,64 @@
+\documentclass{my_cv}
+
+% Packages
+\usepackage[cm]{fullpage}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage[backend=biber, sorting=ynt]{biblatex}
+\addbibresource{sections/bibliography.bib}
+
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{10pt}{2pt}
+
+\begin{document}
+
+% Contact information
+\name{Lorenzo Fabbri}
+\contact{San Marino}{San Marino}{\href{mailto:lorenzo_fabbri92@icloud.com}{\nolinkurl{lorenzo_fabbri92@icloud.com}}}{\href{https://lorenzofabbri.github.io}{lorenzofabbri.github.io}}{\href{https://twitter.com/lorenzoF92SM}{@lorenzoF92SM}}
+
+
+% Research interests
+\import{sections/}{research_interests.tex}
+
+
+% Education
+\import{sections/}{education.tex}
+
+
+% Continuing education
+\import{sections/}{continuing_education.tex}
+
+
+% Work experience
+\import{sections/}{work_experience.tex}
+
+
+% Volunteer experience
+\import{sections/}{volunteer.tex}
+
+
+% Skills
+\import{sections/}{skills.tex}
+
+
+% Honors and Awards
+\import{sections/}{honors_awards.tex}
+
+
+% Bibliography
+\nocite{*}
+\printbibliography[type=article, title={Publications}]
+\printbibliography[type=inproceedings, title={Conference Presentations}]
+
+
+% References
+%\import{sections/}{references.tex}
+
+
+\end{document}
