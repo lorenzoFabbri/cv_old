@@ -27,8 +27,12 @@
   \section[#1]{#1 \hfill #2}%
 }
 
+%\newcommand{\datedsubsection}[3]{%
+%  \subsection[#1]{#1 \hfill #2 \\ \hfill {\raggedright\normalfont #3}}%
+%}
+
 \newcommand{\datedsubsection}[3]{%
-  \subsection[#1]{#1 \hfill #2 \\ \hfill {\raggedright\normalfont #3}}%
+  \subsection[#1]{#1 \hfill #2, {\raggedright\normalfont #3}}%
 }
 
 
